@@ -45,6 +45,9 @@ Unplugin Utilities:
 
 Vite5 requires your node version to be 18+ or 20+.
 
+### sponsor
+[<img src="https://api.gitsponsors.com/api/badge/img?id=440914358" height="20">](https://api.gitsponsors.com/api/badge/link?p=xK+HSNLFOWr0aoOR8AKmsajL0ZBgF0/YR7AbqqnvctzMGBg4Mk0Bxx6v2CCxLDA1)
+
 ### Support
 
 [![JetBrains Logo (Main) logo](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png)](https://jb.gg/OpenSourceSupport)
