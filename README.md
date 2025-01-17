@@ -1,5 +1,8 @@
 # Vite6, React18 (A simple generic example template)
 
+### sponsor
+[<img src="https://api.gitsponsors.com/api/badge/img?id=440914358" height="20">](https://api.gitsponsors.com/api/badge/link?p=xK+HSNLFOWr0aoOR8AKmsajL0ZBgF0/YR7AbqqnvctzMGBg4Mk0Bxx6v2CCxLDA1)
+
 This starter template includes:
 
 - [Vite 6](https://vitejs.dev/guide/)
@@ -44,9 +47,6 @@ Unplugin Utilities:
 ### Note
 
 Vite5 requires your node version to be 18+ or 20+.
-
-### sponsor
-[<img src="https://api.gitsponsors.com/api/badge/img?id=440914358" height="20">](https://api.gitsponsors.com/api/badge/link?p=xK+HSNLFOWr0aoOR8AKmsajL0ZBgF0/YR7AbqqnvctzMGBg4Mk0Bxx6v2CCxLDA1)
 
 ### Support
 
