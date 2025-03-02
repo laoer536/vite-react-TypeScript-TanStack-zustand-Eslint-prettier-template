@@ -1,6 +1,7 @@
 # Vite6, React18 (A simple generic example template)
 
 ### sponsor
+
 [<img src="https://api.gitsponsors.com/api/badge/img?id=440914358" height="20">](https://api.gitsponsors.com/api/badge/link?p=xK+HSNLFOWr0aoOR8AKmsZa3t6CIMQXffBJv9HqeaH5IEf8YvzvEk+8rLYXAOQZIIiwI0TR+x4nhmw66u5FCJGeq1jFFXUCb9WUMZCxB5gijU3LXs9r/2uy34qHO/hGYVLcD7V9PnoOulO7FJY2XJQ==)
 
 This starter template includes:

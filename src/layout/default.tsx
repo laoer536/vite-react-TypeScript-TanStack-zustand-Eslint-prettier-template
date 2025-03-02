@@ -11,5 +11,9 @@ export default function RootLayout() {
       vc.show()
     }
   }, [])
-  return <Outlet />
+  return (
+    <div id={'root-layout'}>
+      <Outlet />
+    </div>
+  )
 }

@@ -13,7 +13,12 @@
   text-size-adjust: 100%;
 }
 
-#root {
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+#root-layout {
   margin: 0 auto;
   max-width: 1280px;
   padding: 2rem;
