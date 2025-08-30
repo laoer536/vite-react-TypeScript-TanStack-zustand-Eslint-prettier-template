@@ -11,9 +11,10 @@ import GlobalProvider from '@/components/GlobalProvider'
 import { routeTree } from './routeTree.gen'
 
 const queryClient = new QueryClient()
+const publicPath = import.meta.env.VITE_PUBLIC_PATH as string
 
 // Create a new router instance
-const router = createRouter({ routeTree })
+const router = createRouter({ basepath: publicPath, routeTree })
 
 // Register the router instance for type safety
 declare module '@tanstack/react-router' {

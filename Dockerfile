@@ -1,7 +1,7 @@
-FROM node:18-alpine AS build
+FROM node:20-alpine AS build
 WORKDIR /app
 COPY pnpm-lock.yaml package.json ./
-RUN npm install pnpm -g
+RUN corepack enable && corepack prepare pnpm@10 --activate
 RUN pnpm install
 COPY . .
 RUN pnpm run build:docker
