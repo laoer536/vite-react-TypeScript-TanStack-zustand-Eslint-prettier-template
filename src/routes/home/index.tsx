@@ -1,5 +1,5 @@
+import { useNavigate } from '@tanstack/react-router'
 import { motion } from 'framer-motion'
-import { useNavigate } from 'react-router-dom'
 
 import dockerLogo from '@/assets/Docker.svg'
 import { button } from '@/assets/motion'
@@ -11,11 +11,12 @@ import { cs } from '@/utils'
 import HomeStyle from './index.module.scss'
 
 const publicPath = import.meta.env.VITE_PUBLIC_PATH
-function Home() {
+
+export default function Home() {
   const { num, changeNum } = useUserStore()
   const navigate = useNavigate()
   const goAboutPage = () => {
-    navigate('/about')
+    navigate({ to: '/about' })
   }
 
   return (
@@ -57,5 +58,3 @@ function Home() {
     </div>
   )
 }
-
-export default Home

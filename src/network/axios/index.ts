@@ -15,7 +15,7 @@ function analysisFilename(contentDisposition: string): string {
   if (regex.test(contentDisposition)) {
     return RegExp.$1
   }
-  return '文件名获取异常'
+  return 'File_name_error'
 }
 
 class MyAxios {

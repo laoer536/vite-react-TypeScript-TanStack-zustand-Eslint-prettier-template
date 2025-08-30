@@ -1,6 +1,6 @@
+import { tanstackRouter } from '@tanstack/router-plugin/vite'
 import react from '@vitejs/plugin-react-swc'
 import { resolve } from 'path'
-import AutoImport from 'unplugin-auto-import/vite'
 import type { ConfigEnv } from 'vite'
 import { defineConfig, loadEnv } from 'vite'
 
@@ -11,16 +11,11 @@ export default ({ command, mode }: ConfigEnv) => {
   console.log('Current environment configuration:', currentEnv) //loadEnv即加载根目录下.env.[mode]环境配置文件
   return defineConfig({
     plugins: [
-      react(),
-      AutoImport({
-        imports: ['react', 'react-router-dom'],
-        dts: './src/auto-imports.d.ts',
-        dirs: ['src/store'],
-        eslintrc: {
-          enabled: true, // Default `false`
-          filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
-        },
+      tanstackRouter({
+        target: 'react',
+        autoCodeSplitting: true,
       }),
+      react(),
     ],
     //项目部署的基础路径,
     base: currentEnv.VITE_PUBLIC_PATH,

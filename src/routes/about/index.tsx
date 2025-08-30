@@ -1,7 +1,12 @@
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { motion } from 'framer-motion'
 
 import { button } from '@/assets/motion'
 import { useUserStore } from '@/store/user'
+
+export const Route = createFileRoute('/about/')({
+  component: About,
+})
 
 function About() {
   const navigate = useNavigate()
@@ -17,11 +22,9 @@ function About() {
       </motion.button>
       <br />
       <br />
-      <motion.button {...button} onClick={() => navigate(-1)}>
+      <motion.button {...button} onClick={() => navigate({ to: '/' })}>
         back
       </motion.button>
     </div>
   )
 }
-
-export default About

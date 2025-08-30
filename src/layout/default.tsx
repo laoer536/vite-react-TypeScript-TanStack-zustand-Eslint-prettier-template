@@ -1,7 +1,8 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet } from '@tanstack/react-router'
+import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
+import { useEffect } from 'react'
 
 import { useVcosole } from '@/hooks/useVconsole'
-// 这个是全局的页面 还可以做一些其他的操作
 
 export default function RootLayout() {
   const [vc] = useVcosole()
@@ -14,6 +15,7 @@ export default function RootLayout() {
   return (
     <div id={'root-layout'}>
       <Outlet />
+      <TanStackRouterDevtools />
     </div>
   )
 }

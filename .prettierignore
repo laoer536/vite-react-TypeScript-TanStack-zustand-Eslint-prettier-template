@@ -1,4 +1,4 @@
 dist*
 node_modules
 docs
-src/auto-imports.d.ts
+routeTree.gen.ts
