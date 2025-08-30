@@ -1,3 +1,4 @@
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { Outlet } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 import { useEffect } from 'react'
@@ -16,6 +17,7 @@ export default function RootLayout() {
     <div id={'root-layout'}>
       <Outlet />
       <TanStackRouterDevtools />
+      <ReactQueryDevtools initialIsOpen={false} />
     </div>
   )
 }
