@@ -1,7 +1,6 @@
-import { request } from '@/network/axios'
+import { getCanvasData, GetCityTotalNumberModel } from './types.ts'
 
-import { getCanvasData } from './types.ts'
-import { GetCityTotalNumberModel } from './types.ts'
+import { request } from '@/network/axios'
 
 enum APIS {
   GET_CITY_TOTAL_NUMBER = '/xxxx/xxxx/xxxxx',

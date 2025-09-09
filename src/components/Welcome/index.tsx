@@ -1,8 +1,8 @@
 import { FC, useEffect, useState } from 'react'
 
-import { eventBus } from '@/utils'
-
 import styles from './index.module.scss'
+
+import { eventBus } from '@/utils'
 
 export interface WelcomeModalInfo {
   title?: string

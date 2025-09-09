@@ -2,8 +2,8 @@ import type { AxiosError, AxiosInstance, AxiosRequestConfig } from 'axios'
 import axios from 'axios'
 
 import { axiosBaseOptions } from '@/network/axios/axios-setup'
-import type { AxiosDownload, Upload, UrlDownload } from '@/network/axios/type'
 import { UploadStream } from '@/network/axios/type'
+import type { AxiosDownload, Upload, UrlDownload } from '@/network/axios/type'
 
 //优先采用RFC 5897  让与url直接通过a标签的下载的结果相同
 function analysisFilename(contentDisposition: string): string {

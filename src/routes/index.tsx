@@ -1,15 +1,13 @@
-import { createFileRoute } from '@tanstack/react-router'
-import { useNavigate } from '@tanstack/react-router'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { motion } from 'framer-motion'
+
+import HomeStyle from './index.module.scss'
 
 import dockerLogo from '@/assets/Docker.svg'
 import { button } from '@/assets/motion'
 import reactLogo from '@/assets/react.svg'
 import { useUserStore } from '@/store/user'
-import { eventBus } from '@/utils'
-import { cs } from '@/utils'
-
-import HomeStyle from './index.module.scss'
+import { eventBus, cs } from '@/utils'
 
 export const Route = createFileRoute('/')({
   component: Home,

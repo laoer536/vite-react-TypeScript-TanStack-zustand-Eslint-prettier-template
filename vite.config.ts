@@ -1,6 +1,7 @@
+import { resolve } from 'path'
+
 import { tanstackRouter } from '@tanstack/router-plugin/vite'
 import react from '@vitejs/plugin-react-swc'
-import { resolve } from 'path'
 import type { ConfigEnv } from 'vite'
 import { defineConfig, loadEnv } from 'vite'
 

@@ -5,10 +5,11 @@ import { createRouter, RouterProvider } from '@tanstack/react-router'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
+import { routeTree } from './routeTree.gen'
+
 import GlobalProvider from '@/components/GlobalProvider'
 
 // Import the generated route tree
-import { routeTree } from './routeTree.gen'
 
 const queryClient = new QueryClient()
 const publicPath = import.meta.env.VITE_PUBLIC_PATH as string
