@@ -40,7 +40,6 @@ export default function Home() {
       <motion.div initial={{ translateY: 300 }} whileInView={{ translateY: 0 }} transition={{ type: 'spring' }}>
         <h1>Vite + React</h1>
         <div className={HomeStyle.card}>
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
           <motion.button {...button} onClick={changeNum}>
             UserStore&apos;s count is {num}
           </motion.button>
