@@ -34,6 +34,7 @@ export default defineConfig(
       ],
     },
     rules: {
+      'import-x/first': 'error',
       'import-x/order': ['error', { alphabetize: { order: 'asc' }, 'newlines-between': 'always' }],
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
